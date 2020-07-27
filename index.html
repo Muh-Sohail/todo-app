@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            margin-bottom: 30px;
+        }
+        .btn {
+            border: none;
+            padding: 5px 15px;
+            outline: none;
+            background-color: lightgray;
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            text-align: center;
+        }
+
+        .uldiv {
+
+            text-align: left;
+        }
+
+        #inputid{
+            padding: 4px 30px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+        #ulist{
+            height: auto;
+            box-shadow: 0 0 10px gray;
+            width: 500px;
+        }
+        p{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 10px;
+        }
+        #btn2{
+            margin-left: 10px;
+            border: none;
+            padding: 5px 15px;
+            outline: none;
+            background-color: lightgray;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="head">
+                <h1>ToDo Application</h1>
+                <div class="inputdiv">
+                    <input type="text" id="inputid">
+                    <button class="btn" onclick="add()">Add</button>
+                    <button class="btn" onclick="delall()">Delete All</button>
+                </div>
+            </div>
+
+            <div class="uldiv">
+                <div id="ulist">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
